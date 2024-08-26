@@ -4,7 +4,7 @@ import LeftVector from "./images/Vector.svg";
 import RightVector from "./images/Vector (1).svg"; 
 import LeftRectangle from "./images/Rectangle 4752.png"; 
 import Rocket from "./images/ion_rocket-outline.png"
-import Heading from "./images/Meet the visionaries.png"
+import Heading from "./images/Meet the Visionaries.png"
 
 const Visionaries = () => {
     return (
