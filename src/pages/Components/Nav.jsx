@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import navImage from '../assets/Navi.png';
 import mars from '../assets/mars.png';
+import { Link } from 'react-router-dom';
 
 const Nav = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -53,17 +54,19 @@ const Nav = () => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
+      <div className="flex justify-center items-center w-full">
       <img 
         src={navImage} 
         alt="nav" 
-        className="absolute flex-shrink-0 w-auto justify-center opacity-95 left-0 h-25 object-contain translate-x-[50]" 
+        className=" w-[70%] items-center absolute flex-shrink-0 justify-center opacity-95 h-25 object-contain translate-x-[50]" 
       />
-      <div className="nulshock text-white absolute top-0 left-0 right-0 flex justify-between grid-cols-5 px-20 py-10 font-bold">
-        <a href="/" className="hover:text-orange-500">HOME</a>
-        <a href="/projects" className="hover:text-orange-500">PROJECTS</a>
+      <div className="nulshock text-white absolute top-0 left-0 right-0 flex justify-between grid-cols-5 py-7 mx-[20%] font-bold">
+        <Link to="/" className="hover:text-orange-500 text-sm">HOME</Link>
+        <Link to="/projects" className="hover:text-orange-500 text-sm">PROJECTS</Link>
         <img src={mars} alt="mars" className="h-11 w-auto flex" />
-        <a href="../InnovationsSection" className="hover:text-orange-500">BLOGS</a>
-        <a href="../ImageGrid" className="hover:text-orange-500">OUR TEAM</a>
+        <Link to="../InnovationsSection" className="hover:text-orange-500 text-sm">BLOGS</Link>
+        <Link to="../ImageGrid" className="hover:text-orange-500 text-sm">OUR TEAM</Link>
+      </div>
       </div>
     </div>
   );
