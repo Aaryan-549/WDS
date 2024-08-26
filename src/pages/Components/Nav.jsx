@@ -65,7 +65,7 @@ const Nav = () => {
         <Link to="/projects" className="hover:text-orange-500 text-sm">PROJECTS</Link>
         <img src={mars} alt="mars" className="h-11 w-auto flex" />
         <Link to="../InnovationsSection" className="hover:text-orange-500 text-sm">BLOGS</Link>
-        <Link to="../ImageGrid" className="hover:text-orange-500 text-sm">OUR TEAM</Link>
+        <Link to="/teampage" className="hover:text-orange-500 text-sm">OUR TEAM</Link>
       </div>
       </div>
     </div>
