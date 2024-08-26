@@ -11,7 +11,7 @@ const Nav = () => {
   // Handler for scroll event
   const handleScroll = () => {
     const currentScrollTop = window.pageYOffset;
-    
+
     if (currentScrollTop > lastScrollTop && currentScrollTop > 0) {
       // Scrolling down
       setIsVisible(false);
@@ -47,26 +47,28 @@ const Nav = () => {
 
     return () => clearTimeout(scrollTimeout);
   }, [scrolling]);
-const navigate = useNavigate();
+
+  const navigate = useNavigate();
+  
   return (
-    <div 
+    <div
       className={`navbar sticky top-0 bg-stone-950 items-center flex grid-rows-1 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
       <div className="flex justify-center items-center w-full">
-      <img 
-        src={navImage} 
-        alt="nav" 
-        className=" w-[70%] items-center absolute flex-shrink-0 justify-center opacity-95 h-25 object-contain translate-x-[50]" 
-      />
-      <div className="nulshock text-white absolute top-0 left-0 right-0 flex justify-between grid-cols-5 py-7 mx-[20%] font-bold">
-        <Link to="/" className="hover:text-orange-500 text-sm">HOME</Link>
-        <Link to="/projects" className="hover:text-orange-500 text-sm">PROJECTS</Link>
-        <img src={mars} onClick={() => {navigate('/')}} alt="mars" className=" cursor-pointer h-11 w-auto flex" />
-        <Link to="../InnovationsSection" className="hover:text-orange-500 text-sm">BLOGS</Link>
-        <Link to="/teampage" className="hover:text-orange-500 text-sm">OUR TEAM</Link>
-      </div>
+        <img
+          src={navImage}
+          alt="nav"
+          className="w-[70%] items-center absolute flex-shrink-0 justify-center opacity-95 h-25 object-contain translate-x-[50]"
+        />
+        <div className="nulshock text-white absolute top-0 left-0 right-0 flex justify-between grid-cols-5 py-7 mx-[20%] font-bold">
+          <Link to="/" className="hover:text-orange-500 text-sm">HOME</Link>
+          <Link to="/projects" className="hover:text-orange-500 text-sm">PROJECTS</Link>
+          <img src={mars} onClick={() => navigate('/')} alt="mars" className="cursor-pointer h-11 w-auto flex" />
+          <Link to="../InnovationsSection" className="hover:text-orange-500 text-sm">BLOGS</Link>
+          <Link to="/teampage" className="hover:text-orange-500 text-sm">OUR TEAM</Link>
+        </div>
       </div>
     </div>
   );
