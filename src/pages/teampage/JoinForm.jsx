@@ -2,8 +2,8 @@ import React from 'react';
 
 const JoinForm = () => {
   return (
-    <div className="flex items-center justify-center min-h-screen">
-      <form className="bg-black p-8 rounded-lg shadow-lg w-full max-w-lg">
+    <div className="flex items-center justify-center mt-10">
+      <form className="bg-[#0D0D0D] p-8 rounded-lg shadow-lg w-full max-w-lg">
         
         <div className="mb-6">
           <label className="block text-white text-lg font-medium mb-2" htmlFor="fullName">
@@ -13,7 +13,7 @@ const JoinForm = () => {
             id="fullName" 
             type="text" 
             placeholder="Enter your name" 
-            className="w-full p-3 bg-gray-800 text-white border border-gray-600 rounded"
+            className="w-full p-3 bg-[#1E1E1E] text-white border border-gray-600 rounded"
           />
         </div>
 
@@ -25,19 +25,19 @@ const JoinForm = () => {
             id="rollNumber" 
             type="text" 
             placeholder="Enter your roll number" 
-            className="w-full p-3 bg-gray-800 text-white border border-gray-600 rounded"
+            className="w-full p-3 bg-[#1E1E1E] text-white border border-gray-600 rounded"
           />
         </div>
 
         <div className="mb-6">
           <label className="block text-white text-lg font-medium mb-2" htmlFor="email">
-            Email Address
+            Email address (@thapar.edu)
           </label>
           <input 
             id="email" 
             type="email" 
             placeholder="Enter your email" 
-            className="w-full p-3 bg-gray-800 text-white border border-gray-600 rounded"
+            className="w-full p-3 bg-[#1E1E1E] text-white border border-gray-600 rounded"
           />
         </div>
 
@@ -49,7 +49,7 @@ const JoinForm = () => {
             id="phoneNumber" 
             type="tel" 
             placeholder="Enter your phone number" 
-            className="w-full p-3 bg-gray-800 text-white border border-gray-600 rounded"
+            className="w-full p-3 bg-[#1E1E1E] text-white border border-gray-600 rounded"
           />
         </div>
 
@@ -61,7 +61,7 @@ const JoinForm = () => {
             id="department" 
             type="text" 
             placeholder="Select the Department you want to apply" 
-            className="w-full p-3 bg-gray-800 text-white border border-gray-600 rounded"
+            className="w-full p-3 bg-[#1E1E1E] text-white border border-gray-600 rounded"
           />
         </div>
 
@@ -73,7 +73,7 @@ const JoinForm = () => {
             id="branch" 
             type="text" 
             placeholder="Enter your Branch" 
-            className="w-full p-3 bg-gray-800 text-white border border-gray-600 rounded"
+            className="w-full p-3 bg-[#1E1E1E] text-white border border-gray-600 rounded"
           />
         </div>
 
@@ -83,7 +83,7 @@ const JoinForm = () => {
           </label>
           <select 
             id="yearOfGraduation" 
-            className="w-full p-3 bg-gray-800 text-white border border-gray-600 rounded"
+            className="w-full p-3 bg-[#1E1E1E] text-white border border-gray-600 rounded"
           >
             <option value="">Select Year</option>
             <option value="2024">2024</option>
@@ -96,7 +96,7 @@ const JoinForm = () => {
 
         <button 
           type="submit" 
-          className="w-full py-3 bg-orange-500 text-black text-lg font-bold rounded hover:bg-orange-600"
+          className="w-32 h-11 mt-5 bg-orange-500 text-black text-lg font-bold rounded hover:bg-orange-600"
         >
           Submit
         </button>

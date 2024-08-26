@@ -4,10 +4,11 @@ import LeftVector from "./images/Vector.svg";
 import RightVector from "./images/Vector (1).svg"; 
 import LeftRectangle from "./images/Rectangle 4752.png"; 
 import Rocket from "./images/ion_rocket-outline.png"
+import Heading from "./images/Meet the visionaries.png"
 
 const Visionaries = () => {
     return (
-      <div className="relative bg-black min-h-screen flex items-center justify-center">
+      <div className="relative min-h-screen flex items-center justify-center">
         {/* Image with Text Overlay */}
         <div className="relative">
           <img
@@ -15,15 +16,6 @@ const Visionaries = () => {
             alt="Group Photo"
             className="max-w-none h-auto rounded-xl shadow-lg"
           />
-          <div className="absolute bottom-0 left-0 p-4 w-[50%] text-left">
-            <p className="text-white text-lg mt-2">
-              <span className="block">Discover the passionate</span>
-              <span className="block">minds behind our success.</span>
-            </p>
-            <h1 className="text-white text-4xl font-bold leading-tight">
-              MEET THE <span className="text-[#FE6E3A]">VISIONARIES</span>
-            </h1>
-          </div>
           <img
           src={Rocket}
           alt="Rocket"
