@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import navImage from '../assets/Navi.png';
 import mars from '../assets/mars.png';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Nav = () => {
   const [isVisible, setIsVisible] = useState(true);
@@ -47,7 +47,7 @@ const Nav = () => {
 
     return () => clearTimeout(scrollTimeout);
   }, [scrolling]);
-
+const navigate = useNavigate();
   return (
     <div 
       className={`navbar sticky top-0 bg-stone-950 items-center flex grid-rows-1 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
@@ -63,7 +63,7 @@ const Nav = () => {
       <div className="nulshock text-white absolute top-0 left-0 right-0 flex justify-between grid-cols-5 py-7 mx-[20%] font-bold">
         <Link to="/" className="hover:text-orange-500 text-sm">HOME</Link>
         <Link to="/projects" className="hover:text-orange-500 text-sm">PROJECTS</Link>
-        <img src={mars} alt="mars" className="h-11 w-auto flex" />
+        <img src={mars} onClick={() => {navigate('/')}} alt="mars" className=" cursor-pointer h-11 w-auto flex" />
         <Link to="../InnovationsSection" className="hover:text-orange-500 text-sm">BLOGS</Link>
         <Link to="/teampage" className="hover:text-orange-500 text-sm">OUR TEAM</Link>
       </div>
