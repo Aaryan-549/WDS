@@ -2,8 +2,8 @@ import React from 'react';
 
 const JoinForm = () => {
   return (
-    <div className="flex items-center justify-center mt-48 font-poppins py-10">
-      <form className="bg-[#0D0D0D] p-8 rounded-lg shadow-lg w-full max-w-lg">
+    <div className="flex items-center justify-center mt-40 font-poppins py-10 md:w-full">
+      <form className="bg-[#0D0D0D] p-8 rounded-lg shadow-lg w-80 md:w-full max-w-lg">
         
         <div className="mb-6">
           <label className="block text-white text-lg font-medium mb-2" htmlFor="fullName">

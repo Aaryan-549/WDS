@@ -10,9 +10,9 @@ const MemberCard = ({ image, name, role }) => {
   };
 
   return (
-    <div 
-      className="relative w-64 h-80 rounded-lg overflow-hidden shadow-md cursor-pointer" 
-      onClick={handleCardClick} 
+    <div
+      className="relative w-44 h-52 sm:w-64 sm:h-80 rounded-lg overflow-hidden shadow-md cursor-pointer"
+      onClick={handleCardClick}
     >
       <img
         src={image}
@@ -20,7 +20,7 @@ const MemberCard = ({ image, name, role }) => {
         className={`w-full h-full object-cover ${isClicked ? 'filter brightness-0' : ''}`}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/35"></div>
-      
+
       {isClicked && (
         <div className="absolute bottom-0 left-0 w-full flex justify-center items-center pb-5">
           <a href="#" className="mx-2">
@@ -34,9 +34,9 @@ const MemberCard = ({ image, name, role }) => {
 
       {!isClicked && (
         <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-transparent to-transparent p-4 pb-5">
-        <h2 className="text-[#F36E3A] text-lg font-bold nulshock">{name}</h2>
-        <p className="text-gray-300 text-md font-poppins">{role}</p>
-      </div>
+          <h2 className="text-[#F36E3A] text-sm font-bold nulshock sm:text-lg">{name}</h2>
+          <p className="text-gray-300 text-xs font-poppins sm:text-sm">{role}</p>
+        </div>
       )}
     </div>
   );
