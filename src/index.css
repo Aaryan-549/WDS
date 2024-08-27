@@ -11,7 +11,7 @@ body {
 
 @font-face {
     font-family: 'Nulshock';
-    src: url('./pages/assets/nulshockbd.ttf') format('truetype');
+    src: url('./pages/assets/nulshock.ttf') format('truetype');
   }
 
   .nulshock {
