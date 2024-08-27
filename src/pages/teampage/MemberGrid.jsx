@@ -1,6 +1,7 @@
 import React from "react";
 import MemberCard from "./MemberCard";
 import Mars from "./images/mars.png"
+import Cross from './images/Group 8674-min.png'
 import Sachin from './members/sachin.png'
 import Ashish from './members/ashish.png'
 import Divij from './members/divij.png'
@@ -23,7 +24,10 @@ import Yashvi from './members/yashvi.png'
 
 const MemberGrid = () => {
     return(
-        <div className="flex flex-col items-center mt-20">
+        <div className="flex flex-col items-center mt-20 bg-cover bg-center" style={{ backgroundImage:`url(${Cross})`, backgroundSize:'100%'}} loading='lazy'>
+            <button className="bg-[#FE6E3A] w-72 h-14 text-[#1E1E1E] py-4 px-4 rounded-lg font-bold nulshock text-2xl mb-40 hover:bg-orange-500">
+        JOIN THE CREW
+      </button>
             <h2 className="text-4xl text-white font-bold nulshock mb-5 ">MINDS BEHIND THE MAGIC</h2>
             <div className="flex justify-center space-x-6 mt-12">
                 <MemberCard image={Ashish} name="DR.ASHISH SINGLA" role="President"/>
