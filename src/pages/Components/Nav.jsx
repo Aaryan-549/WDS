@@ -52,7 +52,7 @@ const Nav = () => {
   
   return (
     <div
-      className={`navbar sticky top-0 bg-stone-950 items-center flex grid-rows-1 transition-opacity duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+      className={`navbar sticky top-0 bg-stone-950 items-center flex grid-rows-1 transition-opacity z-10 duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >

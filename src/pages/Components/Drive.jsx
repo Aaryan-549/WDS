@@ -14,7 +14,7 @@ import group from '../assets/Group 8678.png';
 
 function Drive() {
   return (
-    <div className="relative min-h-[120vh] w-full bg-stone-950 flex flex-col items-center justify-center gap-10 px-10">
+    <div className="relative min-h-[120vh] w-screen bg-stone-950 flex flex-col items-center justify-center gap-10 px-10">
       
       <div className="relative w-full h-auto max-w-6xl flex flex-col items-start justify-end">
         <div className="grid grid-cols-2 gap-6">
@@ -59,7 +59,7 @@ function Drive() {
       <div className="relative w-full h-auto mt-10">
         <img src={achievements} alt="achievements" style={{ transform: 'translateX(100px) translateY(50px)' }}className="w-full h-auto" />
         <img src={pic} alt="pic" className="absolute inset-0 w-full h-auto object-contain max-h-96 mx-auto translate-y-60" />
-        <div className="absolute inset-0 text-white font-poppins text-2xl object-contain translate-x-96 translate-y-96 top-72">
+        <div className="absolute inset-0 text-white font-poppins font-bold text-2xl object-contain translate-x-96 translate-y-96 top-72">
           <p style={{ transform: 'translateX(100px) translateY(20px' }}>EMERGING TEAM OF THE YEAR</p>
           <p style={{ transform: 'translateX(50px) translateY(20px' }}>OF INTERNATIONAL ROVER CHALLENGE</p>
         </div>

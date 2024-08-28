@@ -8,7 +8,7 @@ function Mechanical() {
       <div className="absolute inset-0 flex flex-col items-center justify-center p-4">
         <div
           className="text-orange-600 nulshock text-xl font-bold p-2 rounded"
-          style={{ transform: 'translateY(3rem) translateX(-3.5rem)' }} // Adjust as needed
+          style={{ transform: 'translateY(2.9rem) translateX(-3.5rem)' }} // Adjust as needed
         >
           Mechanical
         </div>
