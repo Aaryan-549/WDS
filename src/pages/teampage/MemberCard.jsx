@@ -2,6 +2,7 @@ import { useEffect } from 'react';
 import React, { useState } from 'react';
 import Insta from './images/Group.png';
 import LinkedIn from './images/Social Media.png';
+import {Link} from 'react-router-dom';
 
 const MemberCard = ({ image, name, role, }) => {
   const [isClicked, setIsClicked] = useState(false);
@@ -34,12 +35,12 @@ const MemberCard = ({ image, name, role, }) => {
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/35"></div>
       <div className='absolute top-0 right-0 flex flex-col space-y-2 pt-2 pr-1 md:hidden'>
-          <a href="#" className="">
-            <img src={Insta} alt="Instagram" className="w-3 h-3 size-xs md:w-8 h-8 size-lg" />
-          </a>
-          <a href="#" className="">
-            <img src={LinkedIn} alt="LinkedIn" className="w-3 h-3 size-xs md:w-8 h-8 size-lg" />
-          </a>
+          <Link to="#" className="">
+            <img src={Insta} alt="Instagram" className="w-4 h-4 size-xs md:w-8 h-8 size-lg" />
+          </Link>
+          <Link to="#" className="">
+            <img src={LinkedIn} alt="LinkedIn" className="w-4 h-4 size-xs md:w-8 h-8 size-lg" />
+          </Link>
       </div>
 
       {isClicked && (

@@ -4,9 +4,9 @@ import OURMISSION from './images/OUR MISSION.png'
 
 const Mission = () => {
   return (
-    <div className="flex flex-col items-center justify-center p-8 space-y-8 mt-20">
+    <div className="flex flex-col items-center justify-center p-8 space-y-8 mt-10 md:mt-20">
       <div className="flex flex-col md:flex-row justify-center space-x-8">
-        <div className="flex flex-col items-start md:pl-20">
+        <div className="flex flex-col items-start justify-center items-center text-center md:pl-20">
           <img src={OURVISION} className='mb-4'/>
           <p className="text-white text-sm md:text-lg font-poppins mb-20 md:w-2/3 h-16">
             To be a beacon of innovation and excellence, shaping a future where
@@ -14,7 +14,7 @@ const Mission = () => {
             inspire positive change.
           </p>
         </div>
-        <div className="flex flex-col items-start mb-10 md:mb-0">
+        <div className="flex flex-col items-start justify-center items-center text-center mb-10 md:mb-0">
           <img src={OURMISSION} className='mb-4'/>
           <p className="text-white text-sm md:text-lg font-poppins md:w-2/3 h-16">
             To harness the power of technology and collaboration, delivering
