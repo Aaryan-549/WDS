@@ -14,7 +14,7 @@ const Mission = () => {
             inspire positive change.
           </p>
         </div>
-        <div className="flex flex-col items-start mb-8 md:mb-0">
+        <div className="flex flex-col items-start mb-10 md:mb-0">
           <img src={OURMISSION} className='mb-4'/>
           <p className="text-white text-sm md:text-lg font-poppins md:w-2/3 h-16">
             To harness the power of technology and collaboration, delivering

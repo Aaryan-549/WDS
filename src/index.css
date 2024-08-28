@@ -14,11 +14,7 @@ body {
     src: url('./pages/assets/nulshock.ttf') format('truetype');
   }
 
-  @font-face {
-    font-family: 'Poppins';
-    src: url('./pages/assets/Poppins-Black.ttf') format('truetype');
-  }
-
+  
   .nulshock {
     font-family: 'Nulshock';
   }

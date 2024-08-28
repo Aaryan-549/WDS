@@ -24,7 +24,7 @@ import Yashvi from './members/yashvi.png'
 
 const MemberGrid = () => {
     return(
-        <div className="flex flex-col items-center mt-20 bg-cover bg-center" style={{ backgroundImage:`url(${Cross})`, backgroundSize:'100%'}} loading='lazy'>
+        <div className="flex flex-col items-center mt-20 bg-cover bg-center"  loading='lazy'>
             <h2 className="text-4xl text-white font-bold nulshock mb-5 ">MINDS BEHIND THE MAGIC</h2>
             <div className="flex justify-center space-x-6 mt-12">
                 <MemberCard image={Ashish} name="DR.ASHISH SINGLA" role="President"/>
