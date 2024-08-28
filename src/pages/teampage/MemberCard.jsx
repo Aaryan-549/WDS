@@ -1,12 +1,25 @@
+import { useEffect } from 'react';
 import React, { useState } from 'react';
 import Insta from './images/Group.png';
 import LinkedIn from './images/Social Media.png';
 
-const MemberCard = ({ image, name, role }) => {
+const MemberCard = ({ image, name, role, }) => {
   const [isClicked, setIsClicked] = useState(false);
+  const [isMediumScreen, setIsMediumScreen] = useState(window.innerWidth >= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMediumScreen(window.innerWidth >= 768);
+    };
+
+    window.addEventListener('resize', handleResize);
+    return () => window.removeEventListener('resize', handleResize);
+  }, []);
 
   const handleCardClick = () => {
-    setIsClicked(!isClicked);
+    if (isMediumScreen) {
+      setIsClicked(!isClicked);
+    }
   };
 
   return (
@@ -20,6 +33,14 @@ const MemberCard = ({ image, name, role }) => {
         className={`w-full h-full object-cover ${isClicked ? 'filter brightness-0' : ''}`}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/35"></div>
+      <div className='absolute top-0 right-0 flex flex-col space-y-2 pt-2 pr-1 md:hidden'>
+          <a href="#" className="">
+            <img src={Insta} alt="Instagram" className="w-5 h-5 size-sm md:w-8 h-8 size-lg" />
+          </a>
+          <a href="#" className="">
+            <img src={LinkedIn} alt="LinkedIn" className="w-5 h-5 size-sm md:w-8 h-8 size-lg" />
+          </a>
+      </div>
 
       {isClicked && (
         <div className="absolute bottom-0 left-0 w-full flex justify-center items-center pb-5">
@@ -34,7 +55,7 @@ const MemberCard = ({ image, name, role }) => {
 
       {!isClicked && (
         <div className="absolute bottom-0 left-0 w-full bg-gradient-to-t from-black via-transparent to-transparent p-4 pb-5">
-          <h2 className="text-[#F36E3A] text-sm font-bold nulshock sm:text-lg">{name}</h2>
+          <h2 className="text-[#F36E3A] text-xs font-bold nulshock sm:text-lg">{name}</h2>
           <p className="text-gray-300 text-xs font-poppins sm:text-sm">{role}</p>
         </div>
       )}
