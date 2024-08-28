@@ -1,12 +1,13 @@
 import React from 'react';
+import JoinCrew from './images/Group 8675.png'
 
 const JoinForm = () => {
   return (
-    <div className="flex items-center justify-center mt-40 font-poppins py-10 md:w-full">
-      <form className="bg-[#0D0D0D] p-8 rounded-lg shadow-lg w-80 md:w-full max-w-lg">
+    <div className="flex items-center justify-center mt-40 font-poppins text-xs py-10 sm:bg-cover bg-center bg-no-repeat md:w-full bg-hidden md:bg-none md:text-sm" style={{ backgroundImage:`url(${JoinCrew})`, backgroundSize:'100%'}}>
+      <form className="bg-[#0D0D0D] p-8 rounded-lg shadow-lg w-60 md:w-full max-w-lg">
         
         <div className="mb-6">
-          <label className="block text-white text-lg font-medium mb-2" htmlFor="fullName">
+          <label className="block text-white text-xs font-medium mb-2 md:text-base" htmlFor="fullName">
             Full Name
           </label>
           <input 
@@ -18,7 +19,7 @@ const JoinForm = () => {
         </div>
 
         <div className="mb-6">
-          <label className="block text-white text-lg font-medium mb-2" htmlFor="rollNumber">
+          <label className="block text-white text-xs font-medium mb-2 md:text-base" htmlFor="rollNumber">
             Roll Number
           </label>
           <input 
@@ -30,7 +31,7 @@ const JoinForm = () => {
         </div>
 
         <div className="mb-6">
-          <label className="block text-white text-lg font-medium mb-2" htmlFor="email">
+          <label className="block text-white text-xs font-medium mb-2 md:text-base" htmlFor="email">
             Email address (@thapar.edu)
           </label>
           <input 
@@ -42,7 +43,7 @@ const JoinForm = () => {
         </div>
 
         <div className="mb-6">
-          <label className="block text-white text-lg font-medium mb-2" htmlFor="phoneNumber">
+          <label className="block text-white text-xs font-medium mb-2 md:text-base" htmlFor="phoneNumber">
             Phone Number
           </label>
           <input 
@@ -54,7 +55,7 @@ const JoinForm = () => {
         </div>
 
         <div className="mb-6">
-          <label className="block text-white text-lg font-medium mb-2" htmlFor="department">
+          <label className="block text-white text-xs font-medium mb-2 md:text-base" htmlFor="department">
             Department
           </label>
           <input 
@@ -66,7 +67,7 @@ const JoinForm = () => {
         </div>
 
         <div className="mb-6">
-          <label className="block text-white text-lg font-medium mb-2" htmlFor="branch">
+          <label className="block text-white text-xs font-medium mb-2 md:text-base" htmlFor="branch">
             Branch
           </label>
           <input 
@@ -78,7 +79,7 @@ const JoinForm = () => {
         </div>
 
         <div className="mb-6">
-          <label className="block text-white text-lg font-medium mb-2" htmlFor="yearOfGraduation">
+          <label className="block text-white text-xs font-medium mb-2 md:text-base" htmlFor="yearOfGraduation">
             Year of Graduation
           </label>
           <select 
