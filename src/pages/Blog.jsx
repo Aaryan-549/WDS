@@ -3,11 +3,14 @@ import CategoryButton from "./blog/CategoryButton";
 import JoinCommunity from "./Components/JoinCommunity";
 import Content from "./blog/Content";
 import Header from "./Components/Header";
+import Nav from "./Components/Nav";
 
 const categories = ["Latest", "Mechanics", "Projects", "Technology"];
 
 function Blog() {
   return (
+    <>
+    <Nav />
     <main className="flex overflow-hidden flex-col pb-3 bg-stone-950">
       < Header line1="DIVE INTO THE" line2="LATEST INSIGHTS"/>
       <section className="flex flex-col items-start self-end w-full max-w-[1316px] max-md:max-w-full">
@@ -23,6 +26,7 @@ function Blog() {
       <Content />
       <JoinCommunity />
     </main>
+    </>
   );
 }
 
