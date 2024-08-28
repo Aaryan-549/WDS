@@ -66,7 +66,7 @@ const Nav = () => {
           <Link to="/" className="hover:text-orange-500 text-sm">HOME</Link>
           <Link to="/projects" className="hover:text-orange-500 text-sm">PROJECTS</Link>
           <img src={mars} onClick={() => navigate('/')} alt="mars" className="cursor-pointer h-11 w-auto flex" />
-          <Link to="../InnovationsSection" className="hover:text-orange-500 text-sm">BLOGS</Link>
+          <Link to="../blog" className="hover:text-orange-500 text-sm">BLOGS</Link>
           <Link to="/teampage" className="hover:text-orange-500 text-sm">OUR TEAM</Link>
         </div>
       </div>
