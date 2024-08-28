@@ -4,6 +4,8 @@ import About from './Components/About';
 import Hero from './Components/Hero';
 import Drive from './Components/Drive';
 import Sponsors from './Components/Sponsors';
+import QForm from './Components/form';
+import Footer from './Components/footer';
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <About style={{ zIndex: -1 }} />
       <Drive />
       <Sponsors />
+      <QForm />
+      <Footer />
     </>
   );
 };

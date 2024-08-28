@@ -21,12 +21,12 @@ const AboutSection = () => {
           >
             01
           </div>
-          <p className="mt-8 px-60 p-0 font-poppins text-gray-950 text-lg font-semibold">
+          <p className="mt-20 px-60 p-0 font-poppins text-gray-950 text-lg font-semibold">
             MARS (Mechatronics and Robotics Society) is one of the leading technical
-            societies at Thapar University which is dedicated towards advancing in the
-            fields of robotics and mechatronics. We provide a platform for robotics
+            societies at Thapar <p>University which is dedicated towards advancing in the
+            fields of robotics and mechatronics.<p> We provide a platform for robotics
             enthusiasts to improve and showcase their skills by working on actual
-            projects.
+            projects.</p></p>
           </p>
           <p className="mt-1 top-[-5] px-60 py-10 font-poppins text-gray-950 text-lg font-semibold">
             As a technical society, our primary work is on mobile and research-based

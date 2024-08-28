@@ -7,7 +7,7 @@ import five from '../assets/five.png';
 
 function Sponsors() {
   return (
-    <div className='relative h-screen w-screen bg-stone-950 flex items-center justify-center'>
+    <div className='relative min-h-full w-screen bg-stone-950 flex items-center justify-center'>
       <div style={{ transform: 'translateX(33rem) translateY(-13rem)'}} className='nulshock text-white text-3xl top-0 justify-center'>OUR SPONSORS</div>
       <div style={{ transform: 'translateX(-10rem) translateY(12rem)'}}>
         <div className='grid grid-cols-3 gap-60'>
