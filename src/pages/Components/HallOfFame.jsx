@@ -2,6 +2,7 @@ import React from 'react';
 import Mechanical from './Mechanical';
 import Electronics from './Electronics';
 import Computer from './Computer';
+import achievements from '../assets/Achievements-1.png';
 
 function HallOfFame() {
   return (
@@ -10,6 +11,7 @@ function HallOfFame() {
         <Mechanical />
         <Electronics />
         <Computer />
+        <img src={achievements} alt="achievements" className="w-full h-auto mt-10" />
       </div>
     </div>
   );

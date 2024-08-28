@@ -12,7 +12,7 @@ const Home = () => {
       <Hero />
       <About style={{ zIndex: -1 }} />
       <Drive />
-      <HallOfFame />
+  
     </>
   );
 };
