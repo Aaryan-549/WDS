@@ -38,28 +38,26 @@ function Form() {
           <img 
             src={insta} 
             alt='Instagram' 
-            className='absolute bottom-0 right-40 w-10 h-10 object-cover transition-transform duration-300 hover:scale-110 hover:brightness-125' 
+            className='w-10 h-10 object-cover transition-transform duration-300 hover:scale-110 hover:brightness-125' 
           />
         </a>
-        
         <a href="https://github.com/mars-tu" target="_blank" rel="noopener noreferrer">
           <img 
             src={github} 
             alt='GitHub' 
-            className='absolute bottom-0 right-60 w-10 h-10 object-cover transition-transform duration-300 hover:scale-110 hover:brightness-125' 
+            className='w-10 h-10 object-cover transition-transform duration-300 hover:scale-110 hover:brightness-125' 
           />
         </a>
-        
         <a href="https://www.linkedin.com/company/mechatronics-and-robotics-society-tiet" target="_blank" rel="noopener noreferrer">
           <img 
             src={linkedin} 
             alt='LinkedIn' 
-            className='absolute bottom-0 right-80 w-10 h-10 object-cover transition-transform duration-300 hover:scale-110 hover:brightness-125' 
+            className='w-10 h-10 object-cover transition-transform duration-300 hover:scale-110 hover:brightness-125' 
           />
         </a>
       </div>
     </div>
   );
-};
+}
 
 export default Form;
