@@ -1,12 +1,11 @@
 import React from 'react';
 
-
 const QueryForm = () => {
   return (
-    <div className="flex items-center justify-center font-poppins text-xs py-10 sm:bg-cover bg-center bg-no-repeat md:w-full bg-hidden md:bg-none md:text-sm" >
-      <form className="bg-[#0D0D0D] p-8 rounded-lg shadow-lg w-60 md:w-full max-w-lg">
+    <div className="overflow-hidden flex items-center justify-center font-poppins text-xs py-10 sm:bg-cover bg-center bg-no-repeat md:w-full bg-hidden md:bg-none md:text-sm">
+      <form className="bg-[#0D0D0D] p-6 rounded-lg shadow-lg w-full max-w-xs md:max-w-lg mx-4">
         
-        <div className="mb-6">
+        <div className="mb-4">
           <label className="block text-white text-xs font-medium mb-2 md:text-base" htmlFor="fullName">
             Full Name
           </label>
@@ -18,7 +17,7 @@ const QueryForm = () => {
           />
         </div>
 
-        <div className="mb-6">
+        <div className="mb-4">
           <label className="block text-white text-xs font-medium mb-2 md:text-base" htmlFor="email">
             Email address
           </label>
@@ -30,7 +29,7 @@ const QueryForm = () => {
           />
         </div>
 
-        <div className="mb-6">
+        <div className="mb-4">
           <label className="block text-white text-xs font-medium mb-2 md:text-base" htmlFor="phoneNumber">
             Phone Number
           </label>
@@ -42,7 +41,7 @@ const QueryForm = () => {
           />
         </div>
 
-        <div className="mb-6">
+        <div className="mb-4">
           <label className="block text-white text-xs font-medium mb-2 md:text-base" htmlFor="query">
             Your Query
           </label>
@@ -55,7 +54,7 @@ const QueryForm = () => {
 
         <button 
           type="submit" 
-          className="w-32 h-11 mt-5 bg-orange-500 text-black text-lg font-bold rounded hover:bg-orange-600"
+          className="w-full h-11 mt-4 bg-orange-500 text-black text-lg font-bold rounded hover:bg-orange-600"
         >
           Submit
         </button>

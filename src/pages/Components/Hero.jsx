@@ -1,12 +1,18 @@
-import React from 'react'
+import React from 'react';
 import Heroimg from '../assets/Hero.png';
 
 function Hero() {
   return (
-      <div style={{ zIndex: -1 }} className="relative h-screen w-screen bg-stone-950">
-        <img src={Heroimg} alt="hero" className="absolute top-0 left-0 h-full w-full object-cover" />
-      </div>
-  )
+    <div className="relative h-auto w-full
+     bg-stone-950  flex items-center justify-center">
+      <img
+        src={Heroimg}
+        alt="hero"
+        className="md:w-screen sm:w-[160%] sm:h-auto md:h-auto object-contain"
+        style={{ objectFit: 'cover' }}
+      />
+    </div>
+  );
 }
 
-export default Hero
+export default Hero;

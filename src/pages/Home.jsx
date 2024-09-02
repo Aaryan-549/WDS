@@ -10,13 +10,15 @@ import Footer from './Components/footer';
 const Home = () => {
   return (
     <>
-      <Nav className="z-10 fixed top-0 left-0 w-full" />
+    <div >
+      *<Nav className="z-10 fixed top-0 left-0 w-full" />
       <Hero />
       <About style={{ zIndex: -1 }} />
       <Drive />
       <Sponsors />
       <QForm />
       <Footer />
+      </div>
     </>
   );
 };

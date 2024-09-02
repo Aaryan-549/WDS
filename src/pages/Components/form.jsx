@@ -9,25 +9,29 @@ import github from '../assets/github.png';
 
 function Form() {
   return (
-    <div className='relative min-h-full w-full bg-stone-950 z-[-1]'>
-      <img src={formback} alt='form' className='absolute bottom-0 left-0 w-full h-1/2 object-cover' />
-      
-      <div style={{ transform: 'translateX(20rem)'}}>
+    <div className='overflow-hidden relative min-h-auto w-full bg-stone-950 z-[-1]'>
+      <img src={formback} alt='form' className='absolute bottom-0 left-0 w-full h-1/2 md:object-cover sm:object-contain' />
+      <div className='md:relative sm:absolute sm:flex md:translate-x-96 sm:object-cover sm:z-10'>
+      <div style={{ transform: 'translateX(30rem)'}}>
         <QueryForm className='m-0 bottom-0' />
       </div>
-      
-      <img style={{ transform: 'translateX(-85rem) translateY(-10rem)'}} src={mail} alt='mail' className='absolute bottom-0 right-0 w-10 h-10 object-cover' />
-      <img style={{ transform: 'translateX(-80rem) translateY(-15rem)'}} src={point} alt='point' className='absolute bottom-0 right-20 w-10 h-10 object-cover' />
-      
-      <div style={{ transform: 'translateX(12rem) translateY(-13.2rem)'}} className='font-poppins text-white text-m z-4'>
+      </div>
+      <div className='translate-x-32'>
+      <div className=' '>
+      <img src={mail} alt='mail' className='absolute -translate-y-52 w-10 h-10 object-cover' />
+      <img src={point} alt='point' className='absolute -translate-y-40 w-10 h-10 object-cover' />
+      </div>
+      <div className='md:-translate-y-1'>
+      <div className='font-poppins md:translate-x-16 md:-translate-y-52 text-white text-m z-4'>
         <p>Bhadson Rd, Adarsh Nagar, Prem Nagar, </p>
         <p>Patiala, Punjab 147004</p>
       </div>
       
-      <div style={{ transform: 'translateX(12rem) translateY(-10.65rem)'}} className='font-poppins text-white text-m z-4'>
+      <div className='font-poppins md:translate-x-16 md:-translate-y-48 top-10 text-white text-m z-4'>
         <p>mars@thapar.edu</p>
       </div>
-      
+      </div>
+      </div>
       <div style={{ transform: 'translateX(-65rem) translateY(-5rem)'}} className='z-3'>
         {/* Social Media Links */}
         <a href="https://www.instagram.com/mars_tiet/" target="_blank" rel="noopener noreferrer">
