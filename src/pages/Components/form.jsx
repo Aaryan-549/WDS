@@ -9,7 +9,7 @@ import github from '../assets/github.png';
 
 function Form() {
   return (
-    <div className='relative min-h-full w-full bg-stone-950 z-[-1]'>
+    <div className=' relative min-h-full w-full bg-stone-950 z-[1000]'>
       <img src={formback} alt='form' className='absolute bottom-0 left-0 w-full h-1/2 object-cover' />
       
       <div style={{ transform: 'translateX(20rem)'}}>
