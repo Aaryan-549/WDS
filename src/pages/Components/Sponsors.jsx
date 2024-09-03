@@ -7,9 +7,9 @@ import five from '../assets/five.png';
 
 function Sponsors() {
   return (
-    <div className='relative min-h-full w-full bg-stone-950 flex flex-col items-center justify-center p-4'>
+    <div className='relative min-h-screen w-full bg-stone-950 flex flex-col items-center justify-center p-4'>
       {/* Sponsors Title */}
-      <div className='nulshock text-white text-3xl mb-8 text-center sm:absolute sm:top-0 sm:translate-x-[33rem] sm:translate-y-[-13rem]'>
+      <div className='nulshock text-white text-3xl mb-8 text-center sm:static sm:mt-12 md:mt-16'>
         OUR SPONSORS
       </div>
 

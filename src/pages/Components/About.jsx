@@ -7,10 +7,10 @@ import rect from '../assets/rect2.png';
 
 const AboutSection = () => {
   return (
-    <div className='overflow-hidden'>
+    <div className=''>
       {/* About Section */}
-      <div style={{ zIndex: 1 }} className="nulshock relative min-h-[160vh] w-full bg-stone-950">
-        <div className='translate-y-48'>
+      <div style={{ zIndex: 1 }} className="nulshock relative md:min-h-[160vh] md:w-full sm:w-screen sm:min-h-[120vh] bg-stone-950">
+        <div className='translate-y-40'>
           <div className="md:py-12 md:px-10 sm:px-10">
             <div style={{ zIndex: 2 }} className="sm:px-60 px-4 sm:py-10 py-6">
               <h1 className="font-bold text-gray-900 text-2xl sm:text-3xl ml-4 sm:mt">OUR STORY</h1>
@@ -21,7 +21,7 @@ const AboutSection = () => {
             >
               01
             </div>
-            <p className="md:mt-24 sm:mt-20 px-4 sm:px-60 p-0 font-poppins text-gray-950 text-base sm:text-lg font-semibold">
+            <p className="md:mt-14 sm:mt-20 px-4 sm:px-60 p-0 font-poppins text-gray-950 text-base sm:text-xs md:text-lg font-semibold">
               MARS (Mechatronics and Robotics Society) is one of the leading technical
               societies at Thapar University, which is dedicated to advancing in the fields of robotics and mechatronics.
               We provide a platform for robotics enthusiasts to improve and showcase their skills by working on actual

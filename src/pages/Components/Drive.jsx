@@ -8,14 +8,13 @@ import MechanicalCard from './Mechanical';
 import ElectronicsCard from './Electronics';
 import ComputerCard from './Computer';
 import image1 from '../assets/image 1.png';
-import achievements from '../assets/Ach.png';
-import pic from '../assets/pic.png';
+import achievements from '../assets/ach.png';
 import group from '../assets/Group 8678.png';
 
 function Drive() {
   return (
-    <div className="overflow-hidden relative min-h-[120vh] w-full bg-stone-950 flex flex-col items-center justify-center gap-10 px-4 sm:px-10">
-      
+    <div className="overflow-hidden relative min-h-screen w-full bg-stone-950 flex flex-col items-center justify-center gap-10 px-4 sm:px-10">
+      {/* First Section: Cards */}
       <div className="relative w-full h-auto max-w-6xl flex flex-col items-start justify-end">
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 sm:gap-6">
           <Card3 className="w-full sm:w-40 h-40" />
@@ -57,21 +56,8 @@ function Drive() {
 
       {/* Container for achievements and pic */}
       <div className="relative w-full h-auto mt-10">
-        <img src={achievements} alt="achievements" style={{ transform: 'translateX(10px) translateY(20px)' }} className="w-full h-auto" />
-        <img src={pic} alt="pic" className="absolute inset-0 w-full h-auto object-contain max-h-96 mx-auto translate-y-40 sm:translate-y-60" />
-        <div className="absolute inset-0 text-white font-poppins font-bold text-lg sm:text-2xl object-contain sm:translate-x-96 sm:translate-y-96 top-40 sm:top-72">
-          <p style={{ transform: 'translateX(10px) translateY(20px)' }}>EMERGING TEAM OF THE YEAR</p>
-          <p style={{ transform: 'translateX(5px) translateY(20px)' }}>OF INTERNATIONAL ROVER CHALLENGE</p>
-        </div>
-        <div style={{ transform: 'translateY(400px)' }} className="text-white text-xl sm:text-3xl absolute inset-0 object-contain top-72">
-          <p style={{ transform: 'translateX(10px)' }} className='nulshock'>"SUCCESS IS A JOURNEY,"</p><p style={{ transform: 'translateX(70px) translateY(0px)' }} className='nulshock'> NOT A DESTINATION."</p>
-          <p style={{ transform: 'translateX(90px) translateY(20px)' }}className='font-poppins text-lg sm:text-2xl' >- Arthur Ashe</p>
-        </div>
-      </div>
-
-      {/* Group photo positioned at the bottom right */}
-      <div className="overflow-hidden absolute bottom-0 right-0 mb-32">
-        <img src={group} alt="group" className="w-60 sm:w-120 h-auto object-contain " />
+        <img src={achievements} alt="achievements" className="w-full h-auto" />
+        
       </div>
     </div>
   );
