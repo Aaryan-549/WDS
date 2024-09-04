@@ -1,10 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-export default function Box() {
+export default function Box2() {
   return (
-      <div className=" nulshock w-32 h-32 bg-black text-white font-bold flex items-center justify-center">
-           <span className="text-center"><span className='text-2xl'>100+ </span><span className='text-xs'>MEMBERS</span></span>
-        </div>
-  )
+    <div className="nulshock md:w-32 w-16 md:h-32 h-16 bg-black text-white font-bold flex items-center justify-center">
+      <span className="text-center">
+        <p className="text-sm md:text-2xl">100+ </p>
+        <p className="text-xxxs md:text-xs">MEMBERS</p>
+      </span>
+    </div>
+  );
 }
-
