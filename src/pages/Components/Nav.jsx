@@ -83,19 +83,19 @@ const Nav = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <img src={mobilenavmars} alt='mars' className='h-8 absolute top-0 left-0'/>
+        <img src={mobilenavmars} alt='mars' onClick={() => navigate('/')} className='h-8 absolute top-0 left-0'/>
         <div className='absolute top-0 right-0'>
-          <button onClick={togglemenu}>
+          <button onClick={togglemenu} className='relative overflow-hidden w-auto h-8'>
             <img src={hamburger} alt='hamburger' className=''/>
           </button>
         </div>
 
         {menuopen && (
-          <div className="absolute top-14 right-0 bg-stone-950 text-white w-full shadow-lg flex flex-col items-end pr-4">
-          <Link to="/" className="py-2 hover:text-orange-500" onClick={togglemenu}>HOME</Link>
-          <Link to="/projects" className="py-2 hover:text-orange-500" onClick={togglemenu}>PROJECTS</Link>
-          <Link to="/blog" className="py-2 hover:text-orange-500" onClick={togglemenu}>BLOGS</Link>
-          <Link to="/teampage" className="py-2 hover:text-orange-500" onClick={togglemenu}>OUR TEAM</Link>
+          <div className="absolute top-6 right-0 bg-stone-900 text-white w-40 shadow-lg flex flex-col items-end pr-4 font-poppins rounded-md">
+          <Link to="/" className="py-2 px-4 hover:text-orange-500" onClick={togglemenu}>Home</Link>
+          <Link to="/projects" className="py-2 px-4 hover:text-orange-500" onClick={togglemenu}>Projects</Link>
+          <Link to="/blog" className="py-2 px-4 hover:text-orange-500" onClick={togglemenu}>Blogs</Link>
+          <Link to="/teampage" className="py-2 px-4 hover:text-orange-500" onClick={togglemenu}>Our Team</Link>
         </div>
         )}
       </div>

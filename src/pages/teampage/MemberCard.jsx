@@ -36,10 +36,10 @@ const MemberCard = ({ image, name, role, }) => {
       <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/35"></div>
       <div className='absolute top-0 right-0 flex flex-col space-y-2 pt-2 pr-1 md:hidden'>
           <Link to="#" className="">
-            <img src={Insta} alt="Instagram" className="w-4 h-4 size-xs md:w-8 h-8 size-lg" />
+            <img src={Insta} alt="Instagram" className=" size-xs md:w-8 h-8 size-lg" />
           </Link>
           <Link to="#" className="">
-            <img src={LinkedIn} alt="LinkedIn" className="w-4 h-4 size-xs md:w-8 h-8 size-lg" />
+            <img src={LinkedIn} alt="LinkedIn" className=" size-xs md:w-8 h-8 size-lg" />
           </Link>
       </div>
 
