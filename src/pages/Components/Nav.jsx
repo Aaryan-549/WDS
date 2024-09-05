@@ -2,25 +2,29 @@ import React, { useState, useEffect } from 'react';
 import navImage from '../assets/Navi.png';
 import mars from '../assets/mars.png';
 import { Link, useNavigate } from 'react-router-dom';
+import mobilenavmars from '../assets/mobile nav mars.png'
+import hamburger from '../assets/hamburger.png'
 
 const Nav = () => {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
   const [scrolling, setScrolling] = useState(false);
 
-  // Handler for scroll event
+  const[menuopen,setmenuopen] = useState(false);
+
+  const togglemenu =() => {
+    setmenuopen(!menuopen);
+  }
+
   const handleScroll = () => {
     const currentScrollTop = window.pageYOffset;
 
     if (currentScrollTop > lastScrollTop && currentScrollTop > 0) {
-      // Scrolling down
       setIsVisible(false);
     } else if (currentScrollTop < lastScrollTop) {
-      // Scrolling up
       setIsVisible(true);
     }
 
-    // Ensure visibility when at the top of the page
     if (currentScrollTop === 0) {
       setIsVisible(true);
     }
@@ -28,7 +32,6 @@ const Nav = () => {
     setLastScrollTop(currentScrollTop <= 0 ? 0 : currentScrollTop);
   };
 
-  // Event listeners for scroll and mouse enter/leave
   useEffect(() => {
     window.addEventListener('scroll', handleScroll);
 
@@ -38,12 +41,12 @@ const Nav = () => {
   }, [lastScrollTop]);
 
   const handleMouseEnter = () => setIsVisible(true);
-  const handleMouseLeave = () => setScrolling(true); // Keep the navbar hidden when not scrolling
+  const handleMouseLeave = () => setScrolling(true);
 
   useEffect(() => {
     const scrollTimeout = setTimeout(() => {
       setScrolling(false);
-    }, 2000); // Show navbar for 2 seconds after scrolling stops
+    }, 2000);
 
     return () => clearTimeout(scrollTimeout);
   }, [scrolling]);
@@ -51,26 +54,52 @@ const Nav = () => {
   const navigate = useNavigate();
   
   return (
-    <div
-      className={`navbar sticky top-0 bg-stone-950 items-center flex grid-rows-1 transition-opacity z-10 duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
-    >
-      <div className="flex justify-center items-center w-full">
-        <img
-          src={navImage}
-          alt="nav"
-          className="w-[70%] items-center absolute flex-shrink-0 justify-center opacity-95 h-25 object-contain translate-x-[50]"
-        />
-        <div className="nulshock text-white absolute top-0 left-0 right-0 flex justify-between grid-cols-5 py-7 mx-[20%] font-bold">
-          <Link to="/" className="hover:text-orange-500 text-sm">HOME</Link>
-          <Link to="/projects" className="hover:text-orange-500 text-sm">PROJECTS</Link>
-          <img src={mars} onClick={() => navigate('/')} alt="mars" className="cursor-pointer h-11 w-auto flex" />
-          <Link to="../blog" className="hover:text-orange-500 text-sm">BLOGS</Link>
-          <Link to="/teampage" className="hover:text-orange-500 text-sm">OUR TEAM</Link>
+    <>
+      {/* Desktop Navigation */}
+      <div
+        className={`navbar sticky top-0 bg-stone-950 items-center flex grid-rows-1 transition-opacity z-10 duration-300 hidden md:flex ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <div className="flex justify-center items-center w-full">
+          <img
+            src={navImage}
+            alt="nav"
+            className="w-[70%] items-center absolute flex-shrink-0 justify-center opacity-95 h-25 object-contain translate-x-[50]"
+          />
+          <div className="nulshock text-white absolute top-0 left-0 right-0 flex justify-between grid-cols-5 py-7 mx-[20%] font-bold">
+            <Link to="/" className="hover:text-orange-500 text-sm">HOME</Link>
+            <Link to="/projects" className="hover:text-orange-500 text-sm">PROJECTS</Link>
+            <img src={mars} onClick={() => navigate('/')} alt="mars" className="cursor-pointer h-11 w-auto flex" />
+            <Link to="../blog" className="hover:text-orange-500 text-sm">BLOGS</Link>
+            <Link to="/teampage" className="hover:text-orange-500 text-sm">OUR TEAM</Link>
+          </div>
         </div>
       </div>
-    </div>
+
+      {/* Mobile Navigation */}
+      <div
+        className={`navbar sticky top-0 bg-stone-950 flex md:hidden items-center justify-between transition-opacity z-10 duration-300 ${isVisible ? 'opacity-100' : 'opacity-0'}`}
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        <img src={mobilenavmars} alt='mars' className='h-8 absolute top-0 left-0'/>
+        <div className='absolute top-0 right-0'>
+          <button onClick={togglemenu}>
+            <img src={hamburger} alt='hamburger' className=''/>
+          </button>
+        </div>
+
+        {menuopen && (
+          <div className="absolute top-14 right-0 bg-stone-950 text-white w-full shadow-lg flex flex-col items-end pr-4">
+          <Link to="/" className="py-2 hover:text-orange-500" onClick={togglemenu}>HOME</Link>
+          <Link to="/projects" className="py-2 hover:text-orange-500" onClick={togglemenu}>PROJECTS</Link>
+          <Link to="/blog" className="py-2 hover:text-orange-500" onClick={togglemenu}>BLOGS</Link>
+          <Link to="/teampage" className="py-2 hover:text-orange-500" onClick={togglemenu}>OUR TEAM</Link>
+        </div>
+        )}
+      </div>
+    </>
   );
 };
 

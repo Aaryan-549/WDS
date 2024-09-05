@@ -11,6 +11,7 @@ const Home = () => {
   return (
     <>
     <div >
+      <Nav/>
       {/*<Nav className="z-10 fixed top-0 left-0 w-full" />*/}
       <Hero />
       <About style={{ zIndex: -1 }} />
