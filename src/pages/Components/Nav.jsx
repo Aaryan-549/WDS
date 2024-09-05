@@ -91,11 +91,11 @@ const Nav = () => {
         </div>
 
         {menuopen && (
-          <div className="absolute top-6 right-0 bg-stone-900 text-white w-40 shadow-lg flex flex-col items-end pr-4 font-poppins rounded-md">
-          <Link to="/" className="py-2 px-4 hover:text-orange-500" onClick={togglemenu}>Home</Link>
-          <Link to="/projects" className="py-2 px-4 hover:text-orange-500" onClick={togglemenu}>Projects</Link>
-          <Link to="/blog" className="py-2 px-4 hover:text-orange-500" onClick={togglemenu}>Blogs</Link>
-          <Link to="/teampage" className="py-2 px-4 hover:text-orange-500" onClick={togglemenu}>Our Team</Link>
+          <div className="absolute top-8 right-0 h-[300px] text-white w-full backdrop-blur-xl shadow-lg flex flex-col items-end pr-4 font-poppins rounded-md">
+          <Link to="/" className="py-3 px-4 hover:text-orange-500 hover:bg-orange-500 w-full justify-center items-center flex" onClick={togglemenu}>Home</Link>
+          <Link to="/projects" className="py-3 px-4 hover:text-orange-500 hover:bg-orange-500 w-full justify-center items-center flex" onClick={togglemenu}>Projects</Link>
+          <Link to="/blog" className="py-3 px-4 hover:text-orange-500 hover:bg-orange-500 w-full justify-center items-center flex" onClick={togglemenu}>Blogs</Link>
+          <Link to="/teampage" className="py-3 px-4 hover:text-orange-500 hover:bg-orange-500 w-full justify-center items-center flex" onClick={togglemenu}>Our Team</Link>
         </div>
         )}
       </div>

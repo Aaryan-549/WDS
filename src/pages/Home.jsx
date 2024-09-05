@@ -7,7 +7,7 @@ import Sponsors from './Components/Sponsors';
 import QForm from './Components/form';
 import Footer from './Components/footer';
 
-const Home = () => {
+const  Home = () => {
   return (
     <>
     <div >
