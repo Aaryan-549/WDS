@@ -7,6 +7,8 @@ import Box from './Box';
 import Box1 from './Box1';
 import Box2 from './Box2';
 
+import rect from '../assets/rect2.png';
+
 function Aboutsec() {
   return (
     <div className='nulshock relative h-full w-full bg-stone-950'>
@@ -17,7 +19,7 @@ function Aboutsec() {
         className='absolute justify-center' 
       />
 
-      <div className='translate-y-[0%] md:translate-y-[5%] translate-x-[0%] h-[80vw] w-[80vw]'>
+      <div className='translate-y-[0%] md:translate-y-[5%] translate-x-[0%] h-[80vw] w-[80vw]  '>
         <Ourstory />
         <p className="mx-[10%] font-poppins text-gray-950 text-xxxs md:text-xl font-semibold translate-y-[20%] translate-x-[10%] md:translate-y-[80%] md:translate-x-[5%] object-contain">
           MARS (Mechatronics and Robotics Society) is one of the leading technical
@@ -33,10 +35,23 @@ function Aboutsec() {
         </p>
         
         {/* Grid with Box, Box1, and Box2 */}
-        <div className="grid grid-cols-3  translate-y-[42%] translate-x-[35%] md:translate-y-[150%] md:translate-x-[40%]">
-          <Box />
+        <div className='absolute translate-x-[80%] translate-y-[60%] md:translate-x-[200%] md:translate-y-[200%] '>
+        <div className="grid grid-cols-3 gap-1 md:gap-10"> {/* Reduced gap */}
+          <Box className=''/>
           <Box1 />
           <Box2 />
+          </div>
+        </div>
+      </div>
+
+      <div className="relative w-full flex justify-center ">
+        <img src={rect} alt="rect" className="w-[85%] sm:w-[65%] h-auto sm:translate-x-20" />
+
+        {/* Centering the "WHAT DRIVES US" text on the image */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div className="text-white nulshock text-xl sm:text-3xl sm:translate-x-28 translate-x-8">
+            WHAT DRIVES US
+          </div>
         </div>
       </div>
 
