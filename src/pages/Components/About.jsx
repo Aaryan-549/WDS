@@ -10,8 +10,8 @@ const AboutSection = () => {
     <div className=''>
       {/* About Section */}
       <div style={{ zIndex: 1 }} className="nulshock relative min-h-[110vh] md:min-h-[160vh]  w-full bg-stone-950">
-        <div className='translate-y-32  md:translate-y-40'>
-          <div className="md:py-12 md:px-10 sm:px-10">
+        <div className='translate-y-32  md:translate-y-40 '>
+          <div className="md:py-12 md:px-10 sm:px-10 ">
             <div style={{ zIndex: 2 }} className="sm:px-60 px-4 sm:py-10 py-6">
               <h1 className="font-bold text-gray-900 text-lg md:text-3xl ml-4 sm:mt translate-y-2 md:translate-y-0 ">OUR STORY</h1>
             </div>
