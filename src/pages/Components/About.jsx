@@ -1,8 +1,5 @@
 import React from 'react';
 import AboutImage from '../assets/Aboutbg.png';
-import Box from './Box';
-import Box1 from './Box1';
-import Box2 from './Box2';
 import rect from '../assets/rect2.png';
 
 const AboutSection = () => {
@@ -52,7 +49,7 @@ const AboutSection = () => {
           style={{ zIndex: -1 }}
           src={AboutImage}
           alt="about"
-          className="absolute top-0 left-0 h-full w-full object-cover sm:object-center"
+          className="absolute  top-0 left-0 h-full w-full object-cover sm:object-center"
         />
       </div>
 

@@ -1,11 +1,7 @@
 import React from 'react';
 import Two from '../assets/Polygon 2.png'; 
 import Three from '../assets/Polygon 3.png'; 
-import Ourstory from './Ourstory';
 import bg from '../assets/bg.png';
-import Box from './Box';
-import Box1 from './Box1';
-import Box2 from './Box2';
 
 import rect from '../assets/rect2.png';
 
@@ -20,7 +16,14 @@ function Aboutsec() {
       />
 
       <div className='translate-y-[0%] md:translate-y-[5%] translate-x-[0%] h-[80vw] w-[80vw]  '>
-        <Ourstory />
+      <div className=' flex items-center left-6 nulshock'>
+      <div className='relative text-4xl md:text-9xl text-white font-bold opacity-20 transform translate-x-11 md:translate-x-28'>
+        01
+      </div>
+      <div className='relative font-bold text-gray-900 text-sm md:text-4xl'>
+        OUR STORY
+      </div>
+    </div>
         <p className="mx-[10%] font-poppins text-gray-950 text-xxxs md:text-xl font-semibold translate-y-[20%] translate-x-[10%] md:translate-y-[80%] md:translate-x-[5%] object-contain">
           MARS (Mechatronics and Robotics Society) is one of the leading technical
           societies at Thapar University, which is dedicated to advancing in the fields of robotics and mechatronics.
@@ -37,9 +40,21 @@ function Aboutsec() {
         {/* Grid with Box, Box1, and Box2 */}
         <div className='absolute translate-x-[80%] translate-y-[60%] md:translate-x-[200%] md:translate-y-[200%] '>
         <div className="grid grid-cols-3 gap-1 md:gap-10"> {/* Reduced gap */}
-          <Box className=''/>
-          <Box1 />
-          <Box2 />
+        <div className=" nulshock md:w-32 w-12 md:h-32 h-12 bg-black text-white font-bold flex items-center justify-center">
+           <span className="text-center"><p className='text-xs md:text-2xl'>1000+ </p><p className='text-xxxs md:text-xs'>FOLLOWERS</p></span>
+             </div>
+             <div className="nulshock md:w-32 w-12 md:h-32 h-12   bg-black text-white font-bold flex items-center justify-center">
+           <span className="text-center">
+             <p className="text-xs md:text-2xl">100+ </p>
+             <p className="text-xxxs md:text-xs">MEMBERS</p>
+           </span>
+         </div>
+         <div className="nulshock md:w-32 w-12 md:h-32 h-12 bg-black text-white font-bold flex items-center justify-center">
+      <span className="text-center">
+        <p className="text-xs md:text-2xl">10+ </p>
+        <p className="text-xxxs md:text-xs">PROJECTS</p>
+      </span>
+    </div>
           </div>
         </div>
       </div>
@@ -58,7 +73,7 @@ function Aboutsec() {
       <img 
         src={Two} 
         alt="Top Right Polygon" 
-        className='absolute top-0 -translate-y-[35%] right-0 w-[100px] md:w-[550px]' 
+        className='absolute top-0 -translate-y-[45%] right-0 w-[100px] md:w-[550px]' 
       />
 
       {/* Image for the bottom left */}

@@ -2,8 +2,8 @@ import React from 'react';
 
 const QueryForm = () => {
   return (
-    <div className="overflow-hidden flex items-center justify-center font-poppins text-xs py-10 sm:bg-cover bg-center bg-no-repeat md:w-full bg-hidden md:bg-none md:text-sm">
-      <form className="bg-[#0D0D0D] p-6 rounded-lg shadow-lg w-full max-w-xs md:max-w-lg mx-4">
+    <div className=" overflow-hidden flex items-center justify-center font-poppins max-w-lg text-xs py-10 sm:bg-cover bg-center bg-no-repeat md:w-full bg-hidden md:bg-none md:text-sm">
+      <form className="bg-[#0D0D0D] p-6 rounded-lg shadow-lg w-full max-w-lg md:max-w-lg mx-4">
         
         <div className="mb-4">
           <label className="block text-white text-xs font-medium mb-2 md:text-base" htmlFor="fullName">

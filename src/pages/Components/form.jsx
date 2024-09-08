@@ -15,8 +15,8 @@ function Form() {
         alt='form'
         className='absolute bottom-0 left-0 w-full h-1/2 object-cover md:object-cover'
       />
-      <div className='relative flex justify-center md:translate-x-96 sm:z-10'>
-        <div className='md:-translate-x-8'>
+      <div className='relative flex justify-center md:translate-x-9 sm:z-10'>
+        <div className='md:translate-x-72 w-full md:w-[50%]'>
           <QueryForm className='m-0 bottom-0' />
         </div>
       </div>
