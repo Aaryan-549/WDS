@@ -31,7 +31,7 @@ const MemberCard = ({ image, name, role, }) => {
       <img
         src={image}
         alt="Member Photo"
-        className={`w-full h-full object-cover ${isClicked ? 'filter brightness-0' : ''}`}
+        className={`w-full h-full object-cover ${isClicked ? 'filter brightness-50' : ''}`}
       />
       <div className="absolute inset-0 bg-gradient-to-t from-black/35 via-transparent to-black/35"></div>
       <div className='absolute top-0 right-0 flex flex-col space-y-2 pt-2 pr-1 md:hidden'>

@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import navImage from '../assets/Navi.png';
 import mars from '../assets/mars.png';
 import { Link, useNavigate } from 'react-router-dom';
-import mobilenavmars from '../assets/mobile nav mars.png'
 import hamburger from '../assets/hamburger.png'
 
 const Nav = () => {
@@ -83,7 +82,7 @@ const Nav = () => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <img src={mobilenavmars} alt='mars' onClick={() => navigate('/')} className='h-8 absolute top-0 left-0'/>
+        <img src={'./mobnav.svg'} alt='mars' onClick={() => navigate('/')} className='h-8 absolute top-0 left-0'/>
         <div className='absolute top-0 right-0'>
           <button onClick={togglemenu} className='relative overflow-hidden w-auto h-8'>
             <img src={hamburger} alt='hamburger' className=''/>
@@ -91,7 +90,7 @@ const Nav = () => {
         </div>
 
         {menuopen && (
-          <div className="absolute top-8 right-0 h-[300px] text-white w-full backdrop-blur-xl shadow-lg flex flex-col items-end pr-4 font-poppins rounded-md">
+          <div className="absolute top-8 right-0 h-[100vh] text-white w-full backdrop-blur-xl shadow-lg flex flex-col items-end pr-4 font-poppins rounded-md">
           <Link to="/" className="py-3 px-4 hover:text-orange-500 hover:bg-orange-500 w-full justify-center items-center flex" onClick={togglemenu}>Home</Link>
           <Link to="/projects" className="py-3 px-4 hover:text-orange-500 hover:bg-orange-500 w-full justify-center items-center flex" onClick={togglemenu}>Projects</Link>
           <Link to="/blog" className="py-3 px-4 hover:text-orange-500 hover:bg-orange-500 w-full justify-center items-center flex" onClick={togglemenu}>Blogs</Link>

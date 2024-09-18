@@ -1,14 +1,13 @@
 import React from 'react';
-import Heroimg from '../assets/hero.png';
 
 function Hero() {
   return (
     <div className="relative h-auto w-full
      bg-stone-950  flex items-center justify-center">
       <img
-        src={Heroimg}
+        src={'./hero.svg'}
         alt="hero"
-        className="md:w-screen sm:w-[160%] sm:h-auto md:h-auto object-contain"
+        className="md:w-screen mt-5 md:mt-10 sm:w-[160%] sm:h-auto md:h-auto object-contain "
         style={{ objectFit: 'cover' }}
       />
     </div>
