@@ -1,28 +1,25 @@
 import React from 'react';
-import Nav from './Components/Nav';
-import About from './Components/About';
-import Hero from './Components/Hero';
-import Drive from './Components/Drive';
-import Sponsors from './Components/Sponsors';
-import QForm from './Components/form';
-import Footer from './Components/footer';
-import Aboutsec from './Components/Aboutsec';
+import Navbar from './Components/Navbar';
 
-const  Home = () => {
+function Home() {
   return (
     <>
-    <div >
-      <Nav/>
-      {/*<Nav className="z-10 fixed top-0 left-0 w-full" />*/}
-      <Hero />
-      <Aboutsec className='' />
-      <Drive />
-      <Sponsors />
-      <QForm />
-      <Footer />
+      {/* Ensure the root container takes up the full viewport */}
+      <div className='relative bg-black h-screen w-screen overflow-hidden'>
+        {/* Navbar */}
+        <div className='absolute top-0 left-0 w-full z-10'>
+          <Navbar />
+        </div>
+
+        {/* Centered text over everything */}
+        <div className='absolute inset-0 flex items-center justify-center z-20'>
+          <div className='Hahmlet font-semibold text-8xl text-custom-blue text-center'>
+            WOLF OF DALAL STREET
+          </div>
+        </div>
       </div>
     </>
   );
-};
+}
 
 export default Home;

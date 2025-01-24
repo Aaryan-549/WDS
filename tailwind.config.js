@@ -6,6 +6,9 @@ export default {
   ],
   theme: {
     extend: {
+      colors: {
+        'custom-blue': '#ADA0FF', 
+      },
       fontSize : {
         'xxs' :  '0.625rem',
         'xxxs' : '7px',
@@ -17,4 +20,5 @@ export default {
     },
   },
   plugins: [],
+  
 }
