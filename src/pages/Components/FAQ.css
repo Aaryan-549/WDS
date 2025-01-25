@@ -1,0 +1,152 @@
+/* FAQ.css - Add the FAQ CSS here */
+
+/* Global Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark background */
+    color: #fff;
+  }
+  
+  /* FAQ Container */
+  .faq-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .faq-heading {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #fff;
+  }
+  
+  /* FAQ Boxes */
+  .faq-boxes {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 40px;
+  }
+  
+  .faq-box {
+    border: 2px solid #9e7aff; /* Slightly thicker border for better visibility */
+    padding: 20px;
+    border-radius: 10px;
+    width: 320px; /* Ensures consistent box size */
+    background-color: #1a1a1a;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .faq-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .faq-box h3 {
+    font-size: 1.2rem;
+    color: #fff;
+    margin-bottom: 10px;
+  }
+  
+  .faq-box p {
+    font-size: 1rem;
+    color: #ccc;
+    line-height: 1.5;
+  }
+  
+  /* Arrow Buttons */
+  .faq-arrows {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Equal spacing between the buttons */
+    margin: 30px 0;
+  }
+  
+  .arrow-button {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: #3a3a3a; /* Default dark gray background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  }
+  
+  .arrow-button.active {
+    background: #9e7aff; /* Purple background for active button */
+  }
+  
+  .arrow-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+  }
+  
+  .arrow-button svg {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Contact Section */
+  .faq-contact-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 50px; /* Spacious padding for alignment */
+    border-bottom: 5px solid #9e7aff; /* Thick purple bottom border */
+    background-color: #121212; /* Matches dark theme */
+    color: #fff;
+  }
+  
+  .faq-contact-heading {
+    font-size: 2.5rem; /* Bigger, bold heading for emphasis */
+    font-weight: bold;
+  }
+  
+  .faq-contact-details {
+    display: flex;
+    gap: 50px; /* Equal spacing between columns */
+    text-align: right; /* Aligns text to the right */
+  }
+  
+  .faq-contact-details div {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .faq-contact-details p {
+    margin: 0;
+    color: #ccc; /* Light gray text */
+    font-size: 1rem;
+    line-height: 1.8; /* Even spacing for better readability */
+  }
+  
+  .faq-contact-details p:first-child {
+    font-weight: bold;
+    text-decoration: underline;
+    text-underline-offset: 4px; /* Subtle gap for underlines */
+    color: #9e7aff; /* Purple highlight */
+  }
+  
+  .faq-contact-details p:last-child {
+    margin-top: 5px;
+    text-decoration: none;
+    border-bottom: 2px solid #9e7aff; /* Thicker bottom border */
+    padding-bottom: 5px;
+  }
+  
+  /* Footer */
+  .faq-footer {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #9e7aff;
+    font-size: 0.9rem;
+    color: #ccc;
+    text-align: center;
+  }
+  
