@@ -1,65 +1,70 @@
-/* FAQ.css - Add the FAQ CSS here */
-
 /* Global Styles */
 body {
     margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #121212; /* Dark background */
+    background-color: #000;
     color: #fff;
+    overflow-x: hidden;
   }
   
   /* FAQ Container */
   .faq-container {
-    padding: 20px;
+    padding: 20px 10px;
     text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
   }
   
   .faq-heading {
-    font-size: 2rem;
+    font-size: 3rem;
     margin-bottom: 30px;
     color: #fff;
   }
   
-  /* FAQ Boxes */
+  /* FAQ Boxes Wrapper */
+  .faq-boxes-wrapper {
+    overflow-x: auto; 
+    overflow-y: visible;
+    display: flex;
+    width: 100%;
+    margin-bottom: 40px;
+    scrollbar-width: none; 
+  }
+  
+  .faq-boxes-wrapper::-webkit-scrollbar {
+    display: none;
+  }
+  
   .faq-boxes {
     display: flex;
-    justify-content: center;
-    gap: 30px;
-    margin-bottom: 40px;
+    flex-wrap: nowrap; 
+    gap: 20px;
   }
   
   .faq-box {
-    border: 2px solid #9e7aff; /* Slightly thicker border for better visibility */
+    flex: 0 0 auto; 
+    width: 300px;
+    border: 2px solid #9e7aff;
     padding: 20px;
     border-radius: 10px;
-    width: 320px; /* Ensures consistent box size */
-    background-color: #1a1a1a;
+    background-color: #000;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px 0;
+    position: relative; 
   }
   
   .faq-box:hover {
-    transform: scale(1.05);
+    transform: scale(1.07);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
-  }
-  
-  .faq-box h3 {
-    font-size: 1.2rem;
-    color: #fff;
-    margin-bottom: 10px;
-  }
-  
-  .faq-box p {
-    font-size: 1rem;
-    color: #ccc;
-    line-height: 1.5;
+    z-index: 10;
   }
   
   /* Arrow Buttons */
   .faq-arrows {
     display: flex;
     justify-content: center;
-    gap: 20px; /* Equal spacing between the buttons */
+    gap: 15px;
     margin: 30px 0;
   }
   
@@ -68,7 +73,7 @@ body {
     height: 50px;
     border: none;
     border-radius: 50%;
-    background: #3a3a3a; /* Default dark gray background */
+    background: #423565;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -77,14 +82,12 @@ body {
     transition: all 0.3s ease;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
   }
-  
   .arrow-button.active {
-    background: #9e7aff; /* Purple background for active button */
+    background: #9e7aff; 
   }
-  
   .arrow-button:hover {
-    transform: scale(1.1);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+    transform: scale(1.2);
+    box-shadow: 0 6px 12px rgba(40, 24, 75, 0.674);
   }
   
   .arrow-button svg {
@@ -92,61 +95,67 @@ body {
     height: 24px;
   }
   
-  /* Contact Section */
-  .faq-contact-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 50px; /* Spacious padding for alignment */
-    border-bottom: 5px solid #9e7aff; /* Thick purple bottom border */
-    background-color: #121212; /* Matches dark theme */
-    color: #fff;
+ /* Contact Section */
+.faq-contact-section {
+    padding: 20px;
+    background-color: #000;
+    text-align: left;
   }
   
   .faq-contact-heading {
-    font-size: 2.5rem; /* Bigger, bold heading for emphasis */
+    font-size: 2rem;
     font-weight: bold;
+    margin-bottom: 20px;
+    text-align: left; 
   }
   
   .faq-contact-details {
     display: flex;
-    gap: 50px; /* Equal spacing between columns */
-    text-align: right; /* Aligns text to the right */
+    flex-direction: column; 
+    gap: 15px;
+    text-align: right; 
+    margin-left: 0; 
   }
   
-  .faq-contact-details div {
-    display: flex;
-    flex-direction: column;
+  .contact-item {
+    text-align: right; 
   }
   
-  .faq-contact-details p {
-    margin: 0;
-    color: #ccc; /* Light gray text */
-    font-size: 1rem;
-    line-height: 1.8; /* Even spacing for better readability */
-  }
-  
-  .faq-contact-details p:first-child {
+  .contact-item .label {
     font-weight: bold;
+    text-align: right;
     text-decoration: underline;
-    text-underline-offset: 4px; /* Subtle gap for underlines */
-    color: #9e7aff; /* Purple highlight */
+    margin-bottom: 10px;
   }
   
-  .faq-contact-details p:last-child {
-    margin-top: 5px;
-    text-decoration: none;
-    border-bottom: 2px solid #9e7aff; /* Thicker bottom border */
-    padding-bottom: 5px;
+  .contact-item p {
+    margin: 5px 0;
+    color: #ccc;
+    text-align: right; 
   }
+  
   
   /* Footer */
   .faq-footer {
     margin-top: 40px;
     padding-top: 20px;
-    border-top: 1px solid #9e7aff;
+    border-top: 5px solid #9e7aff;
     font-size: 0.9rem;
     color: #ccc;
     text-align: center;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .faq-boxes {
+      gap: 15px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .faq-contact-details {
+      flex-direction: column;
+      gap: 20px;
+    }
   }
   
