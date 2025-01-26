@@ -58,17 +58,17 @@ export default function FAQ() {
       </div>
       <div className="faq-contact-section">
         <div id="2">
-          <h2 className="faq-contact-heading">HAVE ANY QUERIES?</h2>
+          <h2 className="faq-contact-heading"><p>HAVE ANY</p><p> QUERIES?</p></h2>
         </div>
         <div id="1">
           <div className="faq-contact-details">
             <div className="contact-item">
-              <p className="label">Mail us:</p>
-              <p>econclub@thapar.edu</p>
+              <p className="label text-3xl">Mail us:</p>
+              <p className="text-2xl">econclub@thapar.edu</p>
             </div>
             <div className="contact-item">
-              <p className="label">Contact us:</p>
-              <p>+91 78781 83180 / +91 99063 84166</p>
+              <p className="label text-3xl">Contact us:</p>
+              <p className="text-2xl">+91 78781 83180 / +91 99063 84166</p>
             </div>
           </div>
         </div>
