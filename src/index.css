@@ -8,20 +8,26 @@ body {
     margin: 0;
     padding: 0;
 }
+@font-face {
+  font-family: 'Red-Rose';
+  src: url('./pages/assets/RedRose-VariableFont_wght.ttf') format('truetype');
+
+ 
+}
 
 @font-face {
     font-family: 'Hahmlet';
     src: url('./pages/assets/Hahmlet-VariableFont_wght.ttf') format('truetype');
   }
 
+  .Red-Rose {
+    font-family: 'Red-Rose';
+  }
   
   .Hahmlet {
     font-family: 'Hahmlet';
   }
 
-  .font-poppins {
-    font-family: 'Poppins', sans-serif;
-  }
  
 .navbar-slide-in {
   transform: translateY(-100%);
@@ -31,5 +37,44 @@ body {
 .navbar-slide-in-visible {
   transform: translateY(0);
 }
+
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0%);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  from {
+    transform: translateX(-50%);
+  }
+  to {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  display: inline-flex;
+  animation: marquee 200s linear infinite; /* Adjust speed here */
+}
+
+.animate-marquee-reverse {
+  display: inline-flex;
+  animation: marquee-reverse 200s linear infinite; /* Adjust speed here */
+}
+
+
 
 

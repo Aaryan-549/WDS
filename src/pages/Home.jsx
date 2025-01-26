@@ -3,10 +3,14 @@ import Navbar from './Components/Navbar';
 import FAQ from './Components/FAQ';
 import LandingPage from './Components/LandingPage';
 import About from './Components/About';
+import Schedule from './Components/schedule';
+import Stocks from './Components/Stocks';
+import StockTracker from './Components/StockTracker';
 
 function Home() {
   return (
     <>
+     {/*
       {/* Ensure the root container takes up the full viewport */}
       <div className='relative bg-black h-screen w-screen '>
         
@@ -21,9 +25,16 @@ function Home() {
        
       </div>
 
-      {/* Add the FAQ section after the main content */}
-      <FAQ />  {/* Place FAQ component here */}
+      <About />
+      <Stocks />
+      
+      <Schedule />
 
+ 
+      {/* Add the FAQ section after the main content */}
+      <FAQ /> 
+         {/* Place FAQ component here */}
+      
     </>
   );
 }
