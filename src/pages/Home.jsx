@@ -12,7 +12,7 @@ function Home() {
     <>
      {/*
       {/* Ensure the root container takes up the full viewport */}
-      <div className='relative bg-black h-screen w-screen '>
+      
         
         {/* Navbar */}
         <div className='absolute z-10'>
@@ -23,7 +23,7 @@ function Home() {
         <LandingPage />
       
        
-      </div>
+      
 
       <About />
       <Stocks />
