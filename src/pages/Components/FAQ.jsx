@@ -20,7 +20,7 @@ export default function FAQ() {
   };
 
   return (
-    <div className="faq-container">
+    <div className="faq-container Red-Rose">
       <h1 className="faq-heading">FAQ</h1>
       <div className="faq-boxes-wrapper" ref={faqBoxesWrapper}>
         <div className="faq-boxes">

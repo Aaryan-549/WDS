@@ -45,26 +45,26 @@ function Navbar() {
           <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black scale-x-0 origin-left transition-transform duration-300 hover:scale-x-100"></span>
         </a>
         <a
-          href="#"
-          className="relative text-black transition duration-300 hover:text-gray-900"
-        >
-          About
-          <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black scale-x-0 origin-left transition-transform duration-300 hover:scale-x-100"></span>
-        </a>
-        <a
-          href="#"
-          className="relative text-black transition duration-300 hover:text-gray-900"
-        >
-          Schedule
-          <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black scale-x-0 origin-left transition-transform duration-300 hover:scale-x-100"></span>
-        </a>
-        <a
-          href="#"
-          className="relative text-black transition duration-300 hover:text-gray-900"
-        >
-          FAQ
-          <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black scale-x-0 origin-left transition-transform duration-300 hover:scale-x-100"></span>
-        </a>
+  href="#about"
+  className="relative text-black transition duration-300 hover:text-gray-900"
+>
+  About
+  <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black scale-x-0 origin-left transition-transform duration-300 hover:scale-x-100"></span>
+</a>
+<a
+  href="#schedule"
+  className="relative text-black transition duration-300 hover:text-gray-900"
+>
+  Schedule
+  <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black scale-x-0 origin-left transition-transform duration-300 hover:scale-x-100"></span>
+</a>
+<a
+  href="#faq"
+  className="relative text-black transition duration-300 hover:text-gray-900"
+>
+  FAQ
+  <span className="absolute left-0 bottom-0 w-full h-0.5 bg-black scale-x-0 origin-left transition-transform duration-300 hover:scale-x-100"></span>
+</a>
       </div>
 
       {/* Header Image */}

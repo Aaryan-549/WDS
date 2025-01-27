@@ -10,31 +10,31 @@ import StockTracker from './Components/StockTracker';
 function Home() {
   return (
     <>
-     {/*
-      {/* Ensure the root container takes up the full viewport */}
-      
-        
-        {/* Navbar */}
-        <div className='absolute z-10'>
-          <Navbar />
-        </div>
+      {/* Navbar */}
+      <div className="absolute z-10">
+        <Navbar />
+      </div>
 
-        {/* Centered text over everything */}
-        <LandingPage />
-      
-       
-      
+      {/* Landing Page */}
+      <LandingPage />
 
-      <About />
+      {/* About Section */}
+      <div id="about">
+        <About />
+      </div>
+
+      {/* Stocks Section */}
       <Stocks />
-      
-      <Schedule />
 
- 
-      {/* Add the FAQ section after the main content */}
-      <FAQ /> 
-         {/* Place FAQ component here */}
-      
+      {/* Schedule Section */}
+      <div id="schedule">
+        <Schedule />
+      </div>
+
+      {/* FAQ Section */}
+      <div id="faq">
+        <FAQ />
+      </div>
     </>
   );
 }

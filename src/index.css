@@ -74,6 +74,10 @@ body {
   display: inline-flex;
   animation: marquee-reverse 200s linear infinite; /* Adjust speed here */
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 
 
