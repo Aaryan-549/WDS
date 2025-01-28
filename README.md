@@ -10,5 +10,6 @@ Currently, two official plugins are available:
 For FAQ intergartion
 first run :
 npm install lucide-react
+npm install firebase
 then :
 npm run dev
