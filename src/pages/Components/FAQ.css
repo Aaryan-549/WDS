@@ -88,7 +88,7 @@ body {
   }
   .arrow-button:hover {
     transform: scale(1.2);
-    box-shadow: 0 6px 12px rgba(40, 24, 75, 0.674);
+    box-shadow: 0 6px 12px rgba(41, 22, 81, 0.674);
   }
   
   .arrow-button svg {
