@@ -6,7 +6,7 @@ import LandingPage from './Components/LandingPage';
 import About from './Components/About';
 import Schedule from './Components/schedule';
 import Stocks from './Components/Stocks';
-// import StockTracker from './Components/StockTracker';
+import StockTracker from './Components/StockTracker';
 
 function Home() {
   const navigate = useNavigate();
@@ -42,9 +42,9 @@ function Home() {
         <h2 className='text-2xl font-bold text-center mb-6'>
           Stock Performance Tracker
         </h2>
-        {/* <div className='px-4'>
+        <div className='px-4'>
           <StockTracker />
-        </div> */}
+        </div>
       </div>
       
       <Schedule />
