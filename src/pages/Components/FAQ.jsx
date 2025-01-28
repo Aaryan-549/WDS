@@ -75,7 +75,7 @@ export default function FAQ() {
             </div>
             <div className="contact-item">
               <p className="label text-3xl">Contact us:</p>
-              <p className="text-2xl">+91 78781 83180 / +91 99063 84166</p>
+              <p className="text-2xl">+91 82839 27588 / +91 70098 94032</p>
             </div>
           </div>
         </div>
