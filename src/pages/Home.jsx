@@ -36,7 +36,9 @@ function Home() {
       {/* FAQ Section */}
       <div id="faq">
         <FAQ />
-        
+
+       
+
       </div>
     </>
   );
