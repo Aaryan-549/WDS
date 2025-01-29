@@ -1,10 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import Header from '../assets/2.png';
 import econ from '../assets/econ.png';
+import { Menu } from 'lucide-react'; // Importing a hamburger menu icon from lucide-react
 
 function Navbar() {
   const [isVisible, setIsVisible] = useState(true);
   const [lastScrollTop, setLastScrollTop] = useState(0);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const handleScroll = () => {
     const currentScrollTop = window.pageYOffset;
@@ -28,6 +30,9 @@ function Navbar() {
       window.removeEventListener('scroll', handleScroll);
     };
   }, [lastScrollTop]);
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
 
   return (
     <div
@@ -35,7 +40,51 @@ function Navbar() {
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
     >
-      <div className="absolute grid grid-cols-5 gap-2 mt-8 text-center font-semibold items-center text-4xl Red-Rose">
+      <div className='md:hidden'><div className="relative flex justify-between items-center p-4 md:hidden">
+          {/* Logo */}
+          <img src={econ} alt="econ" className="w-12 h-auto z-10" />
+
+          {/* Hamburger Menu Button */}
+          <button
+            onClick={toggleMobileMenu}
+            className="text-white border border-gray-300 rounded-lg p-2 focus:outline-none hover:bg-gray-700"
+          >
+            <Menu size={28} />
+          </button>
+        </div>
+
+        {/* Mobile Menu */}
+        {isMobileMenuOpen && (
+          <div className="absolute top-16 left-0 w-full bg-white shadow-md z-20 text-center">
+            <a
+              href="#"
+              className="block py-2 text-black transition duration-300 hover:text-gray-900"
+            >
+              Home
+            </a>
+            <a
+              href="#about"
+              className="block py-2 text-black transition duration-300 hover:text-gray-900"
+            >
+              About
+            </a>
+            <a
+              href="#schedule"
+              className="block py-2 text-black transition duration-300 hover:text-gray-900"
+            >
+              Schedule
+            </a>
+            <a
+              href="#faq"
+              className="block py-2 text-black transition duration-300 hover:text-gray-900"
+            >
+              FAQ
+            </a>
+          </div>
+        )}</div>
+      
+      <div className='hidden md:block'>
+      <div className="absolute grid grid-cols-5 gap-2 mt-8 text-center font-semibold items-center text-4xl Red-Rose ">
         <img src={econ} alt="econ" className="w-58 h-auto z-10" />
         <a
           href="#"
@@ -69,6 +118,7 @@ function Navbar() {
 
       {/* Header Image */}
       <img src={Header} alt="header" className="w-screen object-contain" />
+      </div>
     </div>
   );
 }

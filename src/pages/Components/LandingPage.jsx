@@ -33,9 +33,10 @@ function LandingPage() {
   return (
     <div className="relative w-screen h-screen flex items-center justify-center">
       <div className="text-center px-4  ">
-        <div className=" Hahmlet font-semibold text-8xl text-custom-blue whitespace-normal translate-y-[85%]">
+        <div className=" Hahmlet font-semibold  text-6xl md:text-8xl text-custom-blue whitespace-normal md:translate-y-[85%]">
           WOLF OF DALAL STREET
         </div>
+
         <div className=" relative flex items-center justify-center translate-y-[180%]">
         <div className="relative inline-flex items-center justify-center px-6 py-2 border-4 border-custom-blue rounded-full transition-all duration-300 overflow-hidden bg-transparent before:absolute before:inset-0 before:scale-0 before:bg-custom-blue before:transition-all before:duration-300 hover:before:scale-100">
   <button
@@ -51,20 +52,20 @@ function LandingPage() {
 
         </div>
         {/* Countdown Timer */}
-        <div className=" translate-y-[100%] flex justify-center space-x-4 text-9xl font-medium Red-Rose">
-          <div className="w-[14%] h-[14%] flex items-center justify-center border-4 border-custom-blue rounded-lg">
+        <div className=" translate-y-[100%] flex justify-center space-x-4 text-7xl md:text-9xl font-medium Red-Rose">
+          <div className="w-[33%] h-[33%] md:w-[14%] md:h-[14%] flex items-center justify-center border-4 border-custom-blue rounded-lg">
             <div>
               <div>{timeLeft.days}</div>
               <div className="text-xl mb-2">Days</div>
             </div>
           </div>
-          <div className="w-[14%] h-[14%] flex items-center justify-center border-4 border-custom-blue rounded-lg">
+          <div className="w-[33%] h-[33%] md:w-[14%] md:h-[14%] flex items-center justify-center border-4 border-custom-blue rounded-lg">
             <div>
               <div>{timeLeft.hours}</div>
-              <div className="text-xl mb-2">Hours</div>
+              <div className="text-sm md:text-xl mb-2">Hours</div>
             </div>
           </div>
-          <div className="w-[14%] h-[14%] flex items-center justify-center border-4 border-custom-blue rounded-lg">
+          <div className="w-[33%] h-[33%] md:w-[14%] md:h-[14%] flex items-center justify-center border-4 border-custom-blue rounded-lg">
             <div>
               <div>{timeLeft.minutes}</div>
               <div className="text-xl mb-2">Minutes</div>
