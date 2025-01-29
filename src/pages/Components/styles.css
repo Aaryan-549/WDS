@@ -72,19 +72,22 @@ input {
     box-sizing: border-box;
 }
 
-button {
+.register-button{
     width: 100%;
     padding: 10px;
-    background-color: #022b4d;
-    color: #45a049;
+    background-color: #0a2133;
+    color: #757836;
     border: none;
     border-radius: 4px;
-    font-size: 16px;
+    font-size: 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
     margin-top: 20px;
 }
 
-button:hover {
-    background-color: #9e7aff;
+.register-button:hover {
+    background-color:  bg-#aa90f2;
+    transition: background-color 0.3s ease-in-out;
 }
+
+
