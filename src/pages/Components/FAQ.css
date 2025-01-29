@@ -54,6 +54,20 @@ body {
     margin: 10px 0;
     position: relative; 
   }
+
+  .faq-boxsmall {
+    flex: 0 0 auto; 
+    width: 16rem;
+    height: 16rem;
+    border: 2px solid #9e7aff;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: #000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin: 10px 0;
+    position: relative; 
+  }
   
   .faq-box:hover {
     transform: scale(1.07);
@@ -104,7 +118,7 @@ body {
   }
   
   .faq-contact-heading {
-    font-size: 4rem;
+    font-size: 3rem;
     font-weight: bold;
     margin-bottom: 20px;
     text-align: left; 
@@ -160,3 +174,15 @@ body {
     }
   }
   
+  @media (min-width: 768px) {
+    .faq-boxsmall {
+      height: 22rem;
+      width: 22rem;  /* Change height for md */
+    }
+  }
+
+  @media (min-width: 768px) {
+    .faq-contact-heading {
+      font-size: 4rem;  /* Change height for md */
+    }
+  }

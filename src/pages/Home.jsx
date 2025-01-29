@@ -21,7 +21,7 @@ function Home() {
       <LandingPage />
 
       {/* About Section */}
-      <div id="about">
+      <div id="about" className=''>
         <About />
       </div>
 
@@ -36,7 +36,9 @@ function Home() {
       {/* FAQ Section */}
       <div id="faq">
         <FAQ />
+
        
+
       </div>
     </>
   );
