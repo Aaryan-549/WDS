@@ -238,7 +238,14 @@ const Registration = () => {
             />
           </div>
 
-          <button type="submit">Register Team</button>
+          <button
+  onClick={() => navigate('/register')}
+  aria-label="Register for the event"
+  className="register-button"
+>
+  Register
+</button>
+
         </form>
       </div>
     </div>
