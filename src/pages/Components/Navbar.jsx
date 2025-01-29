@@ -40,9 +40,9 @@ function Navbar() {
         isVisible ? 'opacity-100' : 'opacity-0'
       }`}
     >
-      <div className='md:hidden'><div className="relative flex justify-between items-center p-4 md:hidden">
+      <div className='md:hidden'><div className="relative flex justify-between items-center p-4 md:hidden bg-custom-blue w-screen">
           {/* Logo */}
-          <img src={econ} alt="econ" className="w-12 h-auto z-10" />
+          <img src={econ} alt="econ" className="w-12 h-auto z-10 mr-[2rem]" />
 
           {/* Hamburger Menu Button */}
           <button

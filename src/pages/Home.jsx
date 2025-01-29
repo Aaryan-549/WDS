@@ -21,7 +21,7 @@ function Home() {
       <LandingPage />
 
       {/* About Section */}
-      <div id="about">
+      <div id="about" className=''>
         <About />
       </div>
 
@@ -36,13 +36,7 @@ function Home() {
       {/* FAQ Section */}
       <div id="faq">
         <FAQ />
-        <button
-  onClick={() => navigate('/register')}
-  aria-label="Register for the event"
-  className="mt- 0 ml-auto mr-auto block bg-black-500 text-white font-bold text-sm sm:text-base py-8 px-4 sm:py-3 sm:px-6 rounded hover:bg-#9e7aff-600 transition duration-300"
->
-  Get IN
-</button>
+        
       </div>
     </>
   );
