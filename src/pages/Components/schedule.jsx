@@ -38,7 +38,7 @@ const page = () => {
     {/* Left Section: Day 1 */}
     <div className="flex justify-center items-center font-bold text-6xl mr-6 w-[15rem] h-[190px] ml-20 mt-10 Red-Rose">DAY 2</div>
     {/* Right Section: Details */}
-    <div className = 'flex  w-[40rem] h-auto flex-col  Red-Rose'>
+    <div className = 'flex md:w-[40rem] h-auto flex-col  Red-Rose'>
       
         <ol className="list-decimal pl-2  text-md ml-10 mt-10">
         <p>1.Imagine a bustling trading room atmosphere, prices of stocks fluctuate on screens. An adrenaline-packed experience.</p>

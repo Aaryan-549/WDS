@@ -14,7 +14,7 @@ function App() {
       <div className="flex items-center flex-col mr-8">
   <img src={Image} alt="WDS description 1" className="w-[80%] h-auto" />
   <p className="text-md mt-8 w-[70%] text-center Red-Rose">
-    Wolf of Dalal Street started as an event aiming to develop an economical temperament amongst youngsters.
+  Wolf of Dalal Street began as an event designed to cultivate an economical mindset among young individuals, offering them a platform to engage with financial topics, explore investment opportunities, and develop the skills needed to make informed financial decisions.
   </p>
 </div>
 <div className="flex items-center flex-col mr-8">
