@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import './styles.css'; // Ensure styles.css is imported
 import { db } from './firebase'; // Import Realtime Database instance
 import { ref, set, push } from 'firebase/database';
 
+
 const Registration = () => {
+  const navigate = useNavigate();
   const [formData, setFormData] = useState({
     teamName: '',
     leader: { name: '', roll: '', year: '', email: '' },
