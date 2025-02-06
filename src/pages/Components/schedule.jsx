@@ -21,9 +21,7 @@ const Page = () => {
 
           {/* Right Section: Details */}
           <div className="flex flex-col Red-Rose mt-4 md:mt-10 w-full md:w-[40rem]">
-            <h1 className="text-md md:text-lg text-center md:text-left w-full px-2 md:px-6">
-              Keynote on our SPEAKER (to be revealed soon)
-            </h1>
+            
             <ol className="list-decimal text-md md:text-lg w-full px-4 md:px-10 space-y-2">
               <li>Exciting workshop that covers stock market dynamics</li>
               <li>esigned for both beginners and aspiring investors</li>
