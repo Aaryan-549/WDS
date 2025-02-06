@@ -25,11 +25,11 @@ const Page = () => {
               Keynote on our SPEAKER (to be revealed soon)
             </h1>
             <ol className="list-decimal text-md md:text-lg w-full px-4 md:px-10 space-y-2">
-              <li>Highly sought-after speaker in stock market investing</li>
-              <li>Lectured at universities, conferences, and investment seminars worldwide</li>
-              <li>Known for clear explanations of complex financial concepts</li>
+              <li>Exciting workshop that covers stock market dynamics</li>
+              <li>esigned for both beginners and aspiring investors</li>
+              <li>Fun and interactive learning experience</li>
               <li>Offers practical insights into the stock market</li>
-              <li>Widely recognized as an expert in the field</li>
+              <li>Gain valuable insights from the Wolf of Dalal Street</li>
             </ol>
           </div>
         </div>

@@ -20,13 +20,21 @@ export default function FAQ() {
   };
 
   return (
-    <div className="faq-container Red-Rose">
+    <div className="faq-container Red-Rose ">
       <h1 className="faq-heading">FAQ</h1>
       <div className="faq-boxes-wrapper" ref={faqBoxesWrapper}>
         <div className="faq-boxes">
           <div className="faq-boxsmall ">
             <div className="text-2xl md:text-4xl">Who can participate in the event?</div>
             <p className="text-sm md:text-xl mt-4">Everyone who is a student of Thapar Institute can participate.</p>
+          </div>
+          <div className="faq-boxsmall">
+            <div className=" text-2xl md:text-4xl">What is "The Wolf of Dalal Street" event?</div>
+            <p className="text-sm md:text-xl mt-4">
+              WDS: The Wolf of Dalal Street!! The grandeur event of ECON CLUB
+              which encompasses the glimpse of Dalal Street where the virtual
+              trading takes place on hand.
+            </p>
           </div>
           <div className="faq-boxsmall">
             <div className=" text-2xl md:text-4xl">What is "The Wolf of Dalal Street" event?</div>
@@ -63,12 +71,12 @@ export default function FAQ() {
           <ChevronRight />
         </button>
       </div>
-      <div className="faq-contact-section">
+      <div className="faq-contact-section ">
         <div id="2">
           <h2 className="faq-contact-heading"><p>HAVE ANY</p><p> QUERIES?</p></h2>
         </div>
         <div id="1">
-          <div className="faq-contact-details">
+          <div className="faq-contact-details ">
             <div className="contact-item">
               <p className="label text-3xl">Mail us:</p>
               <p className="text-2xl">econclub@thapar.edu</p>

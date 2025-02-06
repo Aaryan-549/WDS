@@ -8,7 +8,7 @@ function LandingPage() {
   const [timeLeft, setTimeLeft] = useState({ days: 0, hours: 0, minutes: 0 });
 
   useEffect(() => {
-    const targetDate = new Date('February 8, 2025 17:00:00'); // Target date and time
+    const targetDate = new Date('February 8, 2025 20:00:00'); // Target date and time
 
     const interval = setInterval(() => {
       const now = new Date();
