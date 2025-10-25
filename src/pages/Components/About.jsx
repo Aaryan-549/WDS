@@ -65,6 +65,7 @@ function App() {
             </div>
           </SwiperSlide>
         </Swiper>
+        <div>console.log("Using Firebase project:", firebaseConfig.projectId);</div>
       </div>
     </div>
     </div>
